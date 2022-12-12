@@ -1,47 +1,43 @@
-<!-- 
-sections include:
-    -"Martin's Aquarium" H1 
-        -tank image background
-    -List of all the fish Martin owns.
-        -image
-        -species
-        -length
-        -fish's name
-        -location harvested
-        -fish diet
-
-    -List of all the places he visited to harvest them. (Location container, Locations_Header, locations)
-        -place for quotes to help people, placed above the list of places visited.
-    -Tank Maintenance (<Aside> element on the right side.)
-        -keeping tank clean
-        -Water Salinity
-        -Temperature
-     -->
-<html>
-    <head>
-        <h1>Martin's Aquarium</h1>
-        <img>
-    </head>
-    <body>
-        <section>
-            <div>
-                <img>
-                <ul>Name</ul>
-                <ul>Species</ul>
-                <ul>Harvest Location</ul>
-                <ul>Fish Diet</ul>
-                <ul>Length</ul>
-            </div> 
-            <div>
-                <h3>Travel Tips (quotes)</h3>
-                <h2>Harvest Locations</h2>
-            </div>   
-            <aside>
-                <h2>Tank Maintenance</h2>
-                <h3>TANK CLEANING</h3>
-                <h3>WATER SALINITY</h3>
-                <h3>WATER TEMPERATURE</h3>
-            </aside>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Martin's Aquarium</title>
+</head>
+    <body class="mainBody">
+        <section class="topTank">
+            <h1 id="martin">Martin's Aquarium</h1>  
         </section>
+        
+        <div class="fishList">
+            <section>
+                
+            </section>
+        </div>
+        <h2 id="travelTips">...::: Harvest Locations :::... </h2> 
+        <div class="travel">
+            <button class="btn"> Florida </button>
+            <button class="btn"> Bahamas </button>
+            <button class="btn"> South Africa </button>
+            <button class="btn"> Taiwan </button>
+            <button class="btn"> Hawaii </button>
+        </div>
     </body>
+    <aside>
+        <div>
+            <h2 id="tnkMtn">Tank Maintenance</h2>
+                <div class="maintenance">
+                    <h3><span class="underline">Tank Cleaning: </span>  The most important part of saltwater fish tank maintenance is to keep water change as a regular routine. On average, changing the water of the aquarium should be every two weeks. It is recommended to use a siphon to vacuum the gravel and at the same time</h3>
+                    <h3><span class="underline">Salinity: </span>  As a general guideline for saltwater reef tanks, it is best to maintain a salinity of 1.026 (or 35ppt or 53 mS/cm conductivity) to most accurately match the ocean.</h3>
+                    <h3><span class="underline">Temperature: </span> The ideal temperature for a marine tropical fish aquarium is 78-82 degrees Fahrenheit. The ideal temperature for a reef aquarium is 75-78 degrees Fahrenheit.</h3>
+                </div>    
+        </div>
+    </aside>
+
 </html>
+
+        <script type="module" src="./scripts/main.js"></script>
+
